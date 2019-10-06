@@ -80,7 +80,7 @@ header .header_inner nav ul .about {
 header .header_inner nav ul .about :before {
   position: absolute;
   content: "企業情報";
-  bottom: 0.1px;
+  bottom: 5px;
   right: 57%;
   font-weight: 500;
   font-size: 10px;
@@ -91,7 +91,7 @@ header .header_inner nav ul .about :before {
 header .header_inner nav ul .news :before {
   position: absolute;
   content: "ニュース";
-  bottom: 0.1px;
+  bottom: 5px;
   right: 36%;
   font-weight: 500;
   font-size: 10px;
@@ -102,7 +102,7 @@ header .header_inner nav ul .news :before {
 header .header_inner nav ul .s_p :before {
   position: absolute;
   content: "サービス&製品情報";
-  bottom: 0.1px;
+  bottom: 5px;
   right: 33%;
   font-weight: 500;
   font-size: 10px;
@@ -117,7 +117,7 @@ header .header_inner nav ul .contact {
 header .header_inner nav ul .contact :before {
   position: absolute;
   content: "お問い合わせ";
-  bottom: 0.1px;
+  bottom: 5px;
   right: 0.5%;
   font-family: "Noto Sans CJK JP";
   font-weight: 500;
@@ -280,13 +280,14 @@ header .header_inner .header_img_8 {
   width: 100%;
   height: 100%;
   color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  position: relative;
   text-decoration: none;
+  padding-top: 8px;
+  padding-left: 45px;
+  display: block;
 }
 
-.section_inner #about .company a .arrow {
+.section_inner #about .company a:after {
   width: 8px;
   height: 8px;
   border: 0px;
@@ -295,6 +296,10 @@ header .header_inner .header_img_8 {
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
+  top: 30%;
+  right: 30%;
+  content: "";
+  position: absolute;
 }
 
 .p_d {
@@ -351,13 +356,15 @@ header .header_inner .header_img_8 {
   width: 100%;
   height: 100%;
   color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  display: block;
   text-decoration: none;
+  position: relative;
+  padding-top: 8px;
+  padding-left: 10px;
 }
 
-.s_p_flex .science .s_p_link a .arrow, .s_p_flex .education .s_p_link a .arrow, .s_p_flex .unko .s_p_link a .arrow, .s_p_flex .iot .s_p_link a .arrow {
+.s_p_flex .science .s_p_link a:after, .s_p_flex .education .s_p_link a:after, .s_p_flex .unko .s_p_link a:after, .s_p_flex .iot .s_p_link a:after {
+  position: absolute;
   width: 8px;
   height: 8px;
   border: 0px;
@@ -366,6 +373,9 @@ header .header_inner .header_img_8 {
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
+  top: 30%;
+  right: 15%;
+  content: "";
 }
 
 .m_t {
@@ -512,13 +522,14 @@ header .header_inner .header_img_8 {
   width: 100%;
   height: 100%;
   color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  display: block;
   text-decoration: none;
+  position: relative;
+  padding-top: 8px;
+  padding-left: 50px;
 }
 
-#news .news_link a .arrow {
+#news .news_link a:after {
   width: 8px;
   height: 8px;
   border: 0px;
@@ -527,11 +538,13 @@ header .header_inner .header_img_8 {
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
+  position: absolute;
+  top: 30%;
+  left: 65%;
+  content: "";
 }
 
 footer {
-  width: 1280px;
-  height: 261px;
   background-color: #333;
   margin-top: 150px;
   overflow: hidden;
@@ -603,13 +616,14 @@ footer .facebook_link a {
   width: 100%;
   height: 100%;
   color: #333;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  display: block;
   text-decoration: none;
+  position: relative;
+  padding-top: 8px;
+  padding-left: 10px;
 }
 
-footer .facebook_link a .arrow_2 {
+footer .facebook_link a:after {
   width: 8px;
   height: 8px;
   border: 0px;
@@ -618,6 +632,10 @@ footer .facebook_link a .arrow_2 {
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
+  position: absolute;
+  top: 30%;
+  right: 15%;
+  content: "";
 }
 
 footer .copyright {
